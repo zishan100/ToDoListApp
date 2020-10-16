@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Bellota|Cabin&display=swap");
+
+:root {
+  --mainbody: rgba(255, 255, 255, 0.884);
+  --addbutton: rgba(0, 0, 0, 0.301);
+  --deletebutton: rgb(240, 62, 62);
+}
+body {
+  margin: 0;
+  font-family: "Cabin", sans-serif;
+  font-family: "Bellota", cursive;
+}
+
+/*Heading of page */
+#heading {
+  margin: 1rem auto;
+  text-align: center;
+}
+.hr-line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: grey;
+}
+
+/* main container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*description container*/
+.description-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#takeip {
+  margin: 0 5%;
+}
+input[type="text"] {
+  margin: 0 5%;
+  font-size: 15px;
+  border-style: none;
+  width: 90%;
+  line-height: 3.5;
+}
+*:focus {
+  outline: none;
+}
+#form-container {
+  width: 100%;
+}
+/* feature-container */
+.feature-container {
+  display: flex;
+  width: 100%;
+}
+.choose-category {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 5%;
+}
+.vr-line {
+  width: 0.2rem;
+  height: 75px;
+  background-color: grey;
+}
+
+.Due-Date {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+  margin: 0 5%;
+}
+
+input[type="date"] {
+  width: 80%;
+  line-height: 3;
+  border-style: none;
+}
+/*Select Category*/
+#category {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  line-height: 4;
+  padding: 0.7rem 0rem;
+  border-style: none;
+  width: 90%;
+}
+/*Button Container*/
+.button-container {
+  display: flex;
+  height: 15vh;
+  margin: 0 auto;
+  align-items: center;
+  }
+
+.btn {
+  margin: 0 20px;
+  cursor: pointer;
+
+}
+.add-task {
+  background-color: rgba(34, 28, 28, 0.644);
+  border-style: none;
+  color: var(--mainbody);
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+}
+.delete{
+  display: flex;
+  flex-direction: column;
+  margin:1rem auto;
+  width:185px;
+  height:15px;
+  padding:5rem 0rem;
+  cursor: pointer;
+}
+.delete-btn {
+  background-color: rgb(153, 51, 51);
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  color: var(--mainbody);
+}
+/*Display Container*/
+
+.display-list {
+  /* position: relative; */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  min-height: 15vh;
+  /* border: 0.2rem solid grey; */
+}
+input[type="checkbox"] {
+  height: 30px;
+  width: 20%;
+  color: aliceblue;
+  margin: 2rem 2rem;
+  cursor: pointer;
+}
+.display-item{
+  width:40%;
+  display:flex;
+  flex-direction: column;
+}
+.display-item > p {
+  
+  margin-bottom: -5px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/* display-category */
+.display-category{
+ 
+  width:25%;
+}
+.display-child {
+  text-align: center;
+  margin:2rem auto;  
+   width:50%;
+   height:20px;
+  /* position: absolute;
+  top: 25px;
+  right: 15%; */
+  background-color: yellowgreen;
+  padding: 1rem 1rem;
+  color: antiquewhite;
+}
+@media screen and (max-width: 680px){
+  .display-item{
+    width:35%;
+    padding-top: 15px;
+  }
+  .display-item > p{
+    font-size: 15px;
+  }
+
+}
+@media screen and (max-width: 400px){
+  .display-item{
+    width:35%;
+    padding-top: 25px;
+  }
+  .display-item > p{
+    font-size: 10px;
+    
+  }
+  .display-category{
+ 
+    width:40%;
+  }
+  #category {
+    font-size: 15px;
+    width:100%;
+  }
+  input[type="checkbox"] {
+    width: 10%;
+    
+  }
+}
